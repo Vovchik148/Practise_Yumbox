@@ -14,7 +14,7 @@ export default function ProductCard({ product, quantity, onAdd }) {
                 </p>
                 <div className="add-to-cart">
                     {isAdded ? (
-                        <button className='add-button add-button--added' disabled>
+                        <button className='add-button add-button--added' onClick={onAdd}>
                             <img src='/checkmark.svg' className='checkmark' alt="" /> В кошику <strong>{quantity}</strong> шт за <strong>{product.price * quantity} грн</strong>
                         </button>
                     ) : (

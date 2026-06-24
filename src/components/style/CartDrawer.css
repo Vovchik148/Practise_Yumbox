@@ -149,8 +149,10 @@
 
 .cart-drawer__footer {
     padding: 20px 24px;
-    border-top: 1px solid #ffffff1a;
     flex-shrink: 0;
+    background-color: #222222;
+    border-radius: 31px 31px 0 0;
+    border-top: none;
 }
 
 .cart-drawer__delivery {

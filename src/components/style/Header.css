@@ -38,6 +38,7 @@ header .nav-desktop {
 }
 
 header .nav-desktop a {
+    position: relative;
     color: white;
     text-decoration: none;
     padding: 5px;
@@ -45,11 +46,21 @@ header .nav-desktop a {
     transition: 0.3s ease-in-out;
 }
 
-header .nav-desktop a:hover {
-    background-color: #EDEDED;
-    color: #000;
+header .nav-desktop a::after {
+    content: '';
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    bottom: 0;
+    height: 2px;
+    background-color: #FFF;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-in-out;
+}
 
-    box-shadow: 0 0 10px 1.5px #FFF;
+header .nav-desktop a:hover::after {
+    transform: scaleX(1);
 }
 
 .cart {
