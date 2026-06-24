@@ -1,5 +1,7 @@
 .page-content {
     transition: filter 0.3s ease-in-out;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 .page-content--blurred {

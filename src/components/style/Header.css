@@ -14,6 +14,8 @@ header {
     box-sizing: border-box;
     top: 0;
     left: 0;
+    max-width: 1600px;
+    margin: 0 auto;
     width: 100%;
     z-index: 1000;
     display: flex;
@@ -134,7 +136,7 @@ header .burger-lines--open span:nth-child(3) {
     }
 }
 
-@media (max-width: 970px) {
+@media (max-width: 990px) {
     header .nav-desktop {
         font-size: 18px;
     }
@@ -144,7 +146,7 @@ header .burger-lines--open span:nth-child(3) {
     }
 
     .cart .cart-count {
-        
+
         width: 24px;
         height: 24px;
     }
@@ -215,7 +217,7 @@ header .burger-lines--open span:nth-child(3) {
         flex-direction: column;
         gap: 20px;
         align-items: flex-start;
-        
+
     }
 
     .header-burger .nav-mobile a {
@@ -250,7 +252,7 @@ header .burger-lines--open span:nth-child(3) {
 
     .social-links a img {
         width: 36px;
-        height: 36px;        
+        height: 36px;
     }
 
     .header-burger .cart-mobile {
