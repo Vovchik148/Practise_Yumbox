@@ -39,7 +39,7 @@ export default function CartDrawer({ isOpen, onClose, cart, sum, onIncrement, on
             >
                 <div className="cart-drawer__header">
                     <h2>Корзина</h2>
-                    <button className="cart-drawer__close" onClick={onClose}><img src='./src/assets/close_cart.svg'></img></button>
+                    <button className="cart-drawer__close" onClick={onClose}><img src='/close_cart.svg'></img></button>
                 </div>
 
                 <div className="cart-drawer__items">
@@ -61,7 +61,7 @@ export default function CartDrawer({ isOpen, onClose, cart, sum, onIncrement, on
                                         </div>
                                     </div>
                                 </div>
-                                <button className="cart-item__remove" onClick={() => onRemove(item.id)}><img src='./src/assets/trash_bin.svg'></img></button>
+                                <button className="cart-item__remove" onClick={() => onRemove(item.id)}><img src='/trash_bin.svg'></img></button>
                             </div>
                         ))
                     )}
