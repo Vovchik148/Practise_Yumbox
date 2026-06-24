@@ -1,0 +1,88 @@
+.add-to-cart {
+    width: 100%;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.product-weight {
+    margin-top: 1rem;
+    font-weight: 500;
+    font-size: 13px;
+    opacity: 0.4;
+}
+
+.price-wrapper {
+    margin: 2rem auto 2rem auto;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.product-price {
+    font-weight: 600;
+    font-size: 18px;
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.product-price--hidden {
+    opacity: 0;
+    transform: translateY(-10px);
+    pointer-events: none;
+}
+
+.price-wrapper .add-to-cart .add-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px 8px;
+    font-size: 20px;
+    padding: 1.5rem 5rem;
+    border-radius: 63px;
+    color: #FFF;
+    background-color: transparent;
+    border: 2px solid #FFF;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.price-wrapper .add-to-cart .add-button--added {
+    padding: 1.5rem 2rem;
+}
+
+.add-button--added strong {
+    font-weight: 700;
+}
+
+.price-wrapper .add-to-cart .add-button .checkmark {
+    width: auto;
+    height: auto;
+    flex-shrink: 0;
+}
+
+.price-wrapper .add-to-cart .add-button:active {
+    color: #000;
+    background-color: #FFF;
+    border: 2px solid #000;
+    transform: scale(0.95);
+    transition: 0.1s ease-in-out;
+}
+
+@media (max-width: 1260px) {
+    .price-wrapper .add-to-cart .add-button {
+        padding: 1rem 3rem;
+    }
+
+    
+}
+
+@media (max-width: 1070px) {
+    .price-wrapper .add-to-cart .add-button--added {
+        padding: 1rem;
+    }
+}

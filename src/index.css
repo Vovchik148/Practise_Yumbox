@@ -1,0 +1,17 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #111;
+    color: white;
+}
+
+#root {
+    max-width: 100%;
+    min-height: 100svh;
+    text-align: center;
+}
