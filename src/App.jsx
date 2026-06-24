@@ -31,14 +31,17 @@ function App() {
   }, [isCartOpen])
 
   useEffect(() => {
-    const measure = () => {
-      if (headerWrapperRef.current) {
-        setHeaderHeight(headerWrapperRef.current.offsetHeight)
+    const el = headerWrapperRef.current
+    if (!el) return
+
+    const observer = new ResizeObserver((entries) => {
+      for (const entry of entries) {
+        setHeaderHeight(entry.target.offsetHeight)
       }
-    }
-    measure()
-    window.addEventListener('resize', measure)
-    return () => window.removeEventListener('resize', measure)
+    })
+
+    observer.observe(el)
+    return () => observer.disconnect()
   }, [])
 
   const addToCart = (product) => {
