@@ -73,7 +73,7 @@ h3 {
     transition: 0.1s ease-in-out;
 }
 
-@media (max-width: 1260px) {
+@media (max-width: 1500px) {
     .price-wrapper .add-to-cart .add-button {
         padding: 1rem 3rem;
     }
